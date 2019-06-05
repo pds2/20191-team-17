@@ -2,10 +2,15 @@
 #include <iomanip>
 
 
-#include "pessoa.h"
+#include "pessoa.hpp"
+#include "departamento.hpp"
+#include "disciplina.hpp"
+#include "professor.hpp"
+#include "aluno.hpp"
+
 
 #include <string>
-#include <math.h>
+//#include <math.h>
 
 
 int main(){
