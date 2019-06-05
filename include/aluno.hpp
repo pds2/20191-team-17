@@ -9,4 +9,5 @@
 class Aluno: public Pessoa{
 // TODO
 // teste
+int matricula;
 }
