@@ -6,17 +6,17 @@
 
 //#include <string>
 
-#include "pessoa.hpp"
+#include "docente.hpp"
 
 
 
-class Professor: public Pessoa{
+class Professor: public Docente{
 // TODO
 // teste
     private:
-        std::string _carteira;
+        std::string _carteira_trab;
     public:
-        Professor(std::string carteira);
+        Professor(std::string carteira_trab);
         ~Professor();
 
 
