@@ -69,19 +69,21 @@ int main(){
         std::cin >> cart_trab;
         std::cout << "" << std::endl;
 
-        Professor professor(nome, cpf, data_nasc, endereco, salario, cart_trab);
+//        Professor professor(nome, cpf, data_nasc, endereco, salario, cart_trab);
     }
+
+    Professor professor(nome, cpf, data_nasc, endereco, salario, cart_trab);
 
     for(int i = 0; i < num_total_prof; i++){
 
         std::cout << "Professor " << i << ":" << std::endl;
 
-        std::cout << "Nome: " << professores[i].get_nome() << std::endl;
-        std::cout << "CPF: " << professores[i].get_cpf() << std::endl;
-        std::cout << "Data Nascimento: " << professores[i].get_data_nasc() << std::endl;
-        std::cout << "Endereco: " << professores[i].get_endereco() << std::endl;
-        std::cout << "Salario: " << professores[i].get_salario() << std::endl;
-        std::cout << "Carteira de Trabalho: " << professores[i].get_cart_trab() << std::endl;
+        std::cout << "Nome: " << professor.get_nome() << std::endl;
+        std::cout << "CPF: " << professor.get_cpf() << std::endl;
+        std::cout << "Data Nascimento: " << professor.get_data_nasc() << std::endl;
+        std::cout << "Endereco: " << professor.get_endereco() << std::endl;
+        std::cout << "Salario: " << professor.get_salario() << std::endl;
+        std::cout << "Carteira de Trabalho: " << professor.get_cart_trab() << std::endl;
     }
     return 0;
 }
