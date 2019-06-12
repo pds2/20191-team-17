@@ -8,6 +8,7 @@
 #include "aluno.hpp"
 
 #include <string>
+#include <vector>
 
 
 int main(){
@@ -77,12 +78,12 @@ int main(){
 
         std::cout << "Professor " << i << ":" << std::endl;
 
-        std::cout << "Nome: " << professor.get_nome() << std::endl;
-        std::cout << "CPF: " << professor.get_cpf() << std::endl;
-        std::cout << "Data Nascimento: " << professor.get_data_nasc() << std::endl;
-        std::cout << "Endereco: " << professor.get_endereco() << std::endl;
-        std::cout << "Salario: " << professor.get_salario() << std::endl;
-        std::cout << "Carteira de Trabalho: " << professor.get_cart_trab() << std::endl;
+        std::cout << "Nome: " << professor[i].get_nome() << std::endl;
+        std::cout << "CPF: " << professor[i].get_cpf() << std::endl;
+        std::cout << "Data Nascimento: " << professor[i].get_data_nasc() << std::endl;
+        std::cout << "Endereco: " << professor[i].get_endereco() << std::endl;
+        std::cout << "Salario: " << professor[i].get_salario() << std::endl;
+        std::cout << "Carteira de Trabalho: " << professor[i].get_cart_trab() << std::endl;
     }
     return 0;
 }
