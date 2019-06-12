@@ -149,9 +149,9 @@ int main(){
     }
 
     
-
-
-
+    std::cout << "" << std::endl;
+    std::cout << "------------------------------------------------------------------" << std::endl;
+    std::cout << "" << std::endl;
 
     for(int i = 0; i < num_total_prof; i++){
 
@@ -179,6 +179,7 @@ int main(){
         std::cout << "Data Nascimento: " << alunos[i].get_data_nasc() << std::endl;
         std::cout << "Endereco: " << alunos[i].get_endereco() << std::endl;
         std::cout << "Matricula: " << alunos[i].get_matricula() << std::endl;
+        std::cout << "" << std::endl;
     }
 
     std::cout << "" << std::endl;
@@ -191,6 +192,7 @@ int main(){
 
         std::cout << "Nome: " << departamentos[i].get_nome() << std::endl;
         std::cout << "Num Funcionarios: " << departamentos[i].get_num_funcionarios() << std::endl;
+        std::cout << "" << std::endl;
     }
 
     std::cout << "" << std::endl;
@@ -204,6 +206,7 @@ int main(){
         std::cout << "Nome: " << disciplinas[i].get_nome() << std::endl;
         std::cout << "Semestre: " << disciplinas[i].get_semestre() << std::endl;
         std::cout << "Numero de Alunos: " << disciplinas[i].get_num_alunos() << std::endl;
+        std::cout << "" << std::endl;
     }
 
     std::cout << "" << std::endl;
