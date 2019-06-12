@@ -26,6 +26,7 @@ int main(){
     double matricula = 0;
     double salario = 0;
     double cart_trab = 0;
+    double num_alunos = 0;
 
     std::cout << "----- BEM VINDO -----" << std::endl;
     std::cout << "" << std::endl;
@@ -125,11 +126,11 @@ int main(){
         std::cin >> num_alunos;
         std::cout << "" << std::endl;
 
-        disciplinas.push_back(Disciplina(nome, semsestre, num_alunos));
+        disciplinas.push_back(Disciplina(nome, semestre, num_alunos));
     }
 
 
-    std::cout << string(50, '\n');
+//    std::cout << std::string(50, '\n');
 
     for(int i = 0; i < num_total_prof; i++){
 
@@ -143,7 +144,7 @@ int main(){
         std::cout << "Carteira de Trabalho: " << professores[i].get_cart_trab() << std::endl;
     }
 
-    std::cout << string(50, '\n');
+  //  std::cout << std::string(50, '\n');
 
     for(int i = 0; i < num_total_alun; i++){
 
@@ -155,6 +156,8 @@ int main(){
         std::cout << "Endereco: " << alunos[i].get_endereco() << std::endl;
         std::cout << "Matricula: " << alunos[i].get_matricula() << std::endl;
     }
+
+    //std::cout << std::string(50, '\n');
 
     for(int i = 0; i < num_total_disc; i++){
 
