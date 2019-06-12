@@ -26,8 +26,8 @@ ${BUILD_DIR}/departamento.o: ${INCLUDE_DIR}/departamento.hpp ${SRC_DIR}/departam
 	${CC} ${CFLAGS} -I ${INCLUDE_DIR} -c ${SRC_DIR}/departamento.cpp -o ${BUILD_DIR}/departamento.o
 
 #PESSOA
-${BUILD_DIR}/pessoa.o: ${INCLUDE_DIR}/pessoa.hpp ${SRC_DIR}/pessoa.cpp
-	${CC} ${CFLAGS} -I ${INCLUDE_DIR} -c ${SRC_DIR}/pessoa.cpp -o ${BUILD_DIR}/pessoa.o
+# ${BUILD_DIR}/pessoa.o: ${INCLUDE_DIR}/pessoa.hpp ${SRC_DIR}/pessoa.cpp
+# 	${CC} ${CFLAGS} -I ${INCLUDE_DIR} -c ${SRC_DIR}/pessoa.cpp -o ${BUILD_DIR}/pessoa.o
 
 #DISCIPLINA
 ${BUILD_DIR}/disciplina.o: ${INCLUDE_DIR}/disciplina.hpp ${SRC_DIR}/disciplina.cpp
@@ -37,7 +37,7 @@ ${BUILD_DIR}/disciplina.o: ${INCLUDE_DIR}/disciplina.hpp ${SRC_DIR}/disciplina.c
 ${BUILD_DIR}/main.o: ${SRC_DIR}/main.cpp
 	${CC} ${CFLAGS} -I ${INCLUDE_DIR} -c ${SRC_DIR}/main.cpp -o ${BUILD_DIR}/main.o
 
-${BUILD_DIR}/main: ${BUILD_DIR}/professor.o ${BUILD_DIR}/aluno.o ${BUILD_DIR}/departamento.o ${BUILD_DIR}/pessoa.o ${BUILD_DIR}/disciplina.o ${BUILD_DIR}/main.o
+${BUILD_DIR}/main: ${BUILD_DIR}/professor.o ${BUILD_DIR}/aluno.o ${BUILD_DIR}/departamento.o ${BUILD_DIR}/disciplina.o ${BUILD_DIR}/main.o  #${BUILD_DIR}/pessoa.o
 	${CC} ${CFLAGS} -o ${BUILD_DIR}/main ${BUILD_DIR}/*.o
 
 clean_windows:
