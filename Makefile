@@ -18,26 +18,26 @@ ${BUILD_DIR}/professor.o: ${INCLUDE_DIR}/professor.hpp ${SRC_DIR}/professor.cpp
 	${CC} ${CFLAGS} -I ${INCLUDE_DIR} -c ${SRC_DIR}/professor.cpp -o ${BUILD_DIR}/professor.o
 
 # ALUNO
-${BUILD_DIR}/Aluno.o: ${INCLUDE_DIR}/Aluno.hpp ${SRC_DIR}/Aluno.cpp
-	${CC} ${CFLAGS} -I ${INCLUDE_DIR} -c ${SRC_DIR}/Aluno.cpp -o ${BUILD_DIR}/Aluno.o
+${BUILD_DIR}/aluno.o: ${INCLUDE_DIR}/aluno.hpp ${SRC_DIR}/aluno.cpp
+	${CC} ${CFLAGS} -I ${INCLUDE_DIR} -c ${SRC_DIR}/aluno.cpp -o ${BUILD_DIR}/aluno.o
 
 #DEPARTAMENTO
-${BUILD_DIR}/Departamento.o: ${INCLUDE_DIR}/Departamento.hpp ${SRC_DIR}/Departamento.cpp
-	${CC} ${CFLAGS} -I ${INCLUDE_DIR} -c ${SRC_DIR}/Departamento.cpp -o ${BUILD_DIR}/Departamento.o
+${BUILD_DIR}/departamento.o: ${INCLUDE_DIR}/departamento.hpp ${SRC_DIR}/departamento.cpp
+	${CC} ${CFLAGS} -I ${INCLUDE_DIR} -c ${SRC_DIR}/departamento.cpp -o ${BUILD_DIR}/departamento.o
 
 #PESSOA
-${BUILD_DIR}/Pessoa.o: ${INCLUDE_DIR}/Pessoa.hpp ${SRC_DIR}/Pessoa.cpp
-	${CC} ${CFLAGS} -I ${INCLUDE_DIR} -c ${SRC_DIR}/Pessoa.cpp -o ${BUILD_DIR}/Pessoa.o
+${BUILD_DIR}/pessoa.o: ${INCLUDE_DIR}/pessoa.hpp ${SRC_DIR}/pessoa.cpp
+	${CC} ${CFLAGS} -I ${INCLUDE_DIR} -c ${SRC_DIR}/pessoa.cpp -o ${BUILD_DIR}/pessoa.o
 
 #DISCIPLINA
-${BUILD_DIR}/Disciplina.o: ${INCLUDE_DIR}/Disciplina.hpp ${SRC_DIR}/Disciplina.cpp
-	${CC} ${CFLAGS} -I ${INCLUDE_DIR} -c ${SRC_DIR}/Disciplina.cpp -o ${BUILD_DIR}/Disciplina.o
+${BUILD_DIR}/disciplina.o: ${INCLUDE_DIR}/disciplina.hpp ${SRC_DIR}/disciplina.cpp
+	${CC} ${CFLAGS} -I ${INCLUDE_DIR} -c ${SRC_DIR}/disciplina.cpp -o ${BUILD_DIR}/disciplina.o
 
 #MAIN
 ${BUILD_DIR}/main.o: ${SRC_DIR}/main.cpp
 	${CC} ${CFLAGS} -I ${INCLUDE_DIR} -c ${SRC_DIR}/main.cpp -o ${BUILD_DIR}/main.o
 
-${BUILD_DIR}/main: ${BUILD_DIR}/professor.o ${BUILD_DIR}/Aluno.o ${BUILD_DIR}/Departamento.o ${BUILD_DIR}/Pessoa.o ${BUILD_DIR}/Disciplina.o ${BUILD_DIR}/main.o
+${BUILD_DIR}/main: ${BUILD_DIR}/professor.o ${BUILD_DIR}/aluno.o ${BUILD_DIR}/departamento.o ${BUILD_DIR}/pessoa.o ${BUILD_DIR}/disciplina.o ${BUILD_DIR}/main.o
 	${CC} ${CFLAGS} -o ${BUILD_DIR}/main ${BUILD_DIR}/*.o
 
 clean_windows:

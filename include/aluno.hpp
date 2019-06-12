@@ -13,7 +13,11 @@ class Aluno: public Discente{
     private:
         double _matricula;
     public:
-        Aluno(double matricula);
+        Aluno(std::string nome, 
+              std::string cpf, 
+              std::string data_nasc, 
+              std::string endereco,
+              double matricula);
         double get_matricula();
 };  
 #endif
