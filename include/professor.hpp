@@ -20,6 +20,6 @@ class Professor: public Docente{
         ~Professor();
 
 
-};
+};  
 
 #endif

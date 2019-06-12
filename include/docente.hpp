@@ -11,8 +11,11 @@
 
 class Docente: public Pessoa{
     public:
-        Docente(std::string cor, std::string nome) : Pessoa(cor, nome){};
-        virtual double get_area() = 0;
-        virtual double get_perimetro() = 0;
+        Docente(std::string nome, 
+                std::string cpf, 
+                std::string data_nasc, 
+                std::string endereco) : Pessoa(nome, cpf, data_nasc, endereco){};
+        virtual double get_salario() = 0;
+        virtual double get_cart_trab() = 0;
 };
 #endif

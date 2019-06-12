@@ -10,7 +10,6 @@ class Pessoa{
     
     private: 
         std::string _nome;
-        int _idade;
         std::string _cpf;
         std::string _data_nasc;
         std::string _endereco;    
@@ -19,14 +18,10 @@ class Pessoa{
             _nome = nome;
             _cpf = cpf;
             _data_nasc = data_nasc;
-            _idade = 1; //TODO
             _endereco = endereco;
         }
         std::string get_nome(){
-            return _nome;    
-        };
-        int get_idade(){
-            return _idade;
+            return _nome;
         };
         std::string get_cpf(){
             return _cpf;

@@ -11,8 +11,10 @@
 
 class Discente: public Pessoa{
     public:
-        Discente(std::string cor, std::string nome) : Pessoa(cor, nome){};
-        virtual double get_area() = 0;
-        virtual double get_perimetro() = 0;
+        Docente(std::string nome, 
+                std::string cpf, 
+                std::string data_nasc, 
+                std::string endereco) : Pessoa(nome, cpf, data_nasc, endereco){};
+        virtual double get_matricula() = 0;
 };
 #endif
