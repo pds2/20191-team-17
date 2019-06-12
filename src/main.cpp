@@ -123,7 +123,7 @@ int main(){
         std::cin >> num_professores;
         std::cout << "" << std::endl;
 
-        departamentos.push_back(Disciplina(nome, professores, num_professores));
+        departamentos.push_back(Departamento(nome, professores, num_professores));
     }
 
     std::vector<Disciplina> disciplinas;
