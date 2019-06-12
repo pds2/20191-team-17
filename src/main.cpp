@@ -27,7 +27,7 @@ int main(){
     double salario = 0;
     double cart_trab = 0;
     double num_alunos = 0;
-    double num_professores = 0;
+    double num_funcionarios = 0;
 
     std::cout << "----- BEM VINDO -----" << std::endl;
     std::cout << "" << std::endl;
@@ -119,11 +119,11 @@ int main(){
         std::cin >> nome;
         std::cout << "" << std::endl;
 
-        std::cout << "Numero de Professores do Departamento: ";
-        std::cin >> num_professores;
+        std::cout << "Numero de Funcionarios do Departamento: ";
+        std::cin >> num_funcionarios;
         std::cout << "" << std::endl;
 
-        departamentos.push_back(Departamento(nome, professores, num_professores));
+        departamentos.push_back(Departamento(nome, num_funcionarios));
     }
 
     std::vector<Disciplina> disciplinas;
@@ -190,8 +190,7 @@ int main(){
         std::cout << "Departamento " << i+1 << ":" << std::endl;
 
         std::cout << "Nome: " << departamentos[i].get_nome() << std::endl;
-        std::cout << "Professores: " << departamentos[i].get_professores() << std::endl;
-        std::cout << "Numero de Professores: " << departamentos[i].get_num_professores() << std::endl;
+        std::cout << "Num Funcionarios: " << departamentos[i].get_num_funcionarios() << std::endl;
     }
 
     std::cout << "" << std::endl;

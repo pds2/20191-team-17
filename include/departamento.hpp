@@ -5,31 +5,23 @@
 #include <iomanip>
 
 #include <string>
-#include <vector>
-
-#include "professor.hpp"
 
 
 class Departamento{
     
     private: 
         std::string _nome;
-        std::vector<Professor> professores;
-        double _num_professores;
+        double _num_funcionarios;
     public:
-        Departamento(std::string nome, std::vector<Professor> professores, double num_professores){
+        Departamento(std::string nome, double num_funcionarios){
             _nome = nome;
-            _professores = professores;
-            _num_professores = num_professores;
+            _num_funcionarios = num_funcionarios;
         }
         std::string get_nome(){
             return _nome;
         };
-        std::vector<Professor> get_professores(){
-            return _professores;
-        };
-        double get_num_professores(){
-            return _num_professores;
+        double get_num_funcionarios(){
+            return _num_funcionarios;
         };
 };
 #endif
