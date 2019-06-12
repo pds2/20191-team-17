@@ -5,6 +5,7 @@
 #include <iomanip>
 
 #include <string>
+#include <vector>
 
 #include "professor.hpp"
 
@@ -13,10 +14,10 @@ class Departamento{
     
     private: 
         std::string _nome;
-        Professor *_professores;
+        std::vector<Professor> professores;
         double _num_professores;
     public:
-        Departamento(std::string nome, Professor *professores, double num_professores){
+        Departamento(std::string nome, std::vector<Professor> professores, double num_professores){
             _nome = nome;
             _professores = professores;
             _num_professores = num_professores;
@@ -24,7 +25,7 @@ class Departamento{
         std::string get_nome(){
             return _nome;
         };
-        Professor *get_professores(){
+        std::vector<Professor> get_professores(){
             return _professores;
         };
         double get_num_professores(){
