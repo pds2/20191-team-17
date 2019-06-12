@@ -15,10 +15,9 @@ class Departamento{
         Professor *_professor;
         double _num_professores;
     public:
-        Departamento(std::string nome, Professor *professor, double num_alunos){
+        Departamento(std::string nome, Professor *professor, double num_professores){
             _nome = nome;
             _professor = professor;
-            _num_alunos = num_alunos;
         }
         std::string get_nome(){
             return _nome;
@@ -26,8 +25,8 @@ class Departamento{
         Professor *get_professores(){
             return _professor;
         };
-        double get_num_alunos(){
-            return _num_alunos;
+        double get_num_professores(){
+            return _num_professores;
         };
 };
 #endif

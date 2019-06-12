@@ -6,5 +6,5 @@
 #include "disciplina.hpp"
 
 
-Disciplina::Disciplina(){
+Disciplina::Disciplina(std::string nome, std::string semestre, double num_alunos){
 }
