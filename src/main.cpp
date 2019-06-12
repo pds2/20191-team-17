@@ -39,7 +39,7 @@ int main(){
     double salario = 0;
     double cart_trab = 0;
 
-    Professor professores[num_total_prof];
+    // Professor professores[num_total_prof];
 
     for(int i = 0; i < num_total_prof; i++){
 
@@ -69,7 +69,7 @@ int main(){
         std::cin >> cart_trab;
         std::cout << "" << std::endl;
 
-        professores[i](nome, cpf, data_nasc, endereco, salario, cart_trab);
+        Professor professor(nome, cpf, data_nasc, endereco, salario, cart_trab);
     }
 
     for(int i = 0; i < num_total_prof; i++){
