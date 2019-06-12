@@ -6,6 +6,8 @@
 
 #include <string>
 
+#include "professor.hpp"
+
 class Departamento{
     
     private: 
@@ -28,3 +30,4 @@ class Departamento{
             return _num_alunos;
         };
 };
+#endif
