@@ -27,6 +27,7 @@ int main(){
     double salario = 0;
     double cart_trab = 0;
     double num_alunos = 0;
+    double num_professores = 0;
 
     std::cout << "----- BEM VINDO -----" << std::endl;
     std::cout << "" << std::endl;
