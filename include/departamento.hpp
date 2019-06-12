@@ -13,7 +13,7 @@ class Departamento{
         Professor *_professor;
         double _num_professores;
     public:
-        Pessoa(std::string nome, Professor *professor, double num_alunos){
+        Departamento(std::string nome, Professor *professor, double num_alunos){
             _nome = nome;
             _professor = professor;
             _num_alunos = num_alunos;

@@ -13,7 +13,7 @@ class Disciplina{
         std::string _semestre;
         double _num_alunos;
     public:
-        Pessoa(std::string nome, std::string semestre, double num_alunos){
+        Disciplina(std::string nome, std::string semestre, double num_alunos){
             _nome = nome;
             _semestre = semestre;
             _num_alunos = num_alunos;

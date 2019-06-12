@@ -1,10 +1,10 @@
 #include <iostream>
 #include <iomanip>
 
+#include <string>
+
 #include "disciplina.hpp"
 
-#include <string>
-//#include <math.h>
 
 Disciplina::Disciplina(){
 }
