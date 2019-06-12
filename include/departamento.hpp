@@ -19,6 +19,7 @@ class Departamento{
         Departamento(std::string nome, Professor *professores, double num_professores){
             _nome = nome;
             _professores = professores;
+            _num_professores = num_professores;
         }
         std::string get_nome(){
             return _nome;
