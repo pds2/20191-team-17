@@ -39,7 +39,7 @@ int main(){
     double salario = 0;
     double cart_trab = 0;
 
-    Professor *professores;
+    Professor professores[num_total_prof];
 
     for(int i = 0; i < num_total_prof; i++){
 
