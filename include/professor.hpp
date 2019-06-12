@@ -1,25 +1,21 @@
 #ifndef PROFESSOR_H
 #define PROFESSOR_H
 
-//#include <iostream>
-//#include <iomanip>
+#include <iostream>
+#include <iomanip>
 
-//#include <string>
+#include <string>
 
 #include "docente.hpp"
 
 
-
 class Professor: public Docente{
-// TODO
-// teste
     private:
-        std::string _carteira_trab;
+        double _salario;
+        double _cart_trab;
     public:
-        Professor(std::string carteira_trab);
-        ~Professor();
-
-
+        Professor(double salario, double cart_trab);
+        double get_salario();
+        double get_cart_trab();
 };  
-
 #endif

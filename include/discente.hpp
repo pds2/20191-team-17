@@ -4,10 +4,10 @@
 #include <iostream>
 #include <iomanip>
 
+#include <string>
+
 #include "pessoa.hpp"
 
-#include <string>
-#include <math.h>
 
 class Discente: public Pessoa{
     public:

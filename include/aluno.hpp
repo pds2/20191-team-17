@@ -6,8 +6,14 @@
 
 #include <string>
 
-class Aluno: public Pessoa{
-// TODO
-// teste
-int matricula;
-}
+#include "discente.hpp"
+
+
+class Aluno: public Discente{
+    private:
+        double _matricula;
+    public:
+        Aluno(double matricula);
+        double get_matricula();
+};  
+#endif
