@@ -11,7 +11,7 @@
 
 class Discente: public Pessoa{
     public:
-        Docente(std::string nome, 
+        Discente(std::string nome, 
                 std::string cpf, 
                 std::string data_nasc, 
                 std::string endereco) : Pessoa(nome, cpf, data_nasc, endereco){};
