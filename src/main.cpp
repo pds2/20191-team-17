@@ -107,6 +107,24 @@ int main(){
         alunos.push_back(Aluno(nome, cpf, data_nasc, endereco, matricula));
     }
 
+    std::vector<Departamento> departamentos;
+    departamentos.reserve(num_total_depa);
+
+    for(int i = 0; i < num_total_depa; i++){
+
+        std::cout << "Departamento " << i+1 << ":" << std::endl;
+
+        std::cout << "Nome: ";
+        std::cin >> nome;
+        std::cout << "" << std::endl;
+
+        std::cout << "Numero de Professores do Departamento: ";
+        std::cin >> num_professores;
+        std::cout << "" << std::endl;
+
+        departamentos.push_back(Disciplina(nome, professores, num_professores));
+    }
+
     std::vector<Disciplina> disciplinas;
     disciplinas.reserve(num_total_disc);
 
@@ -129,8 +147,10 @@ int main(){
         disciplinas.push_back(Disciplina(nome, semestre, num_alunos));
     }
 
+    
 
-//    std::cout << std::string(50, '\n');
+
+
 
     for(int i = 0; i < num_total_prof; i++){
 
@@ -142,9 +162,12 @@ int main(){
         std::cout << "Endereco: " << professores[i].get_endereco() << std::endl;
         std::cout << "Salario: " << professores[i].get_salario() << std::endl;
         std::cout << "Carteira de Trabalho: " << professores[i].get_cart_trab() << std::endl;
+        std::cout << "" << std::endl;
     }
 
-  //  std::cout << std::string(50, '\n');
+    std::cout << "" << std::endl;
+    std::cout << "------------------------------------------------------------------" << std::endl;
+    std::cout << "" << std::endl;
 
     for(int i = 0; i < num_total_alun; i++){
 
@@ -157,7 +180,22 @@ int main(){
         std::cout << "Matricula: " << alunos[i].get_matricula() << std::endl;
     }
 
-    //std::cout << std::string(50, '\n');
+    std::cout << "" << std::endl;
+    std::cout << "------------------------------------------------------------------" << std::endl;
+    std::cout << "" << std::endl;
+
+    for(int i = 0; i < num_total_depa; i++){
+
+        std::cout << "Departamento " << i+1 << ":" << std::endl;
+
+        std::cout << "Nome: " << departamentos[i].get_nome() << std::endl;
+        std::cout << "Professores: " << departamentos[i].get_professores() << std::endl;
+        std::cout << "Numero de Professores: " << departamentos[i].get_num_professores() << std::endl;
+    }
+
+    std::cout << "" << std::endl;
+    std::cout << "------------------------------------------------------------------" << std::endl;
+    std::cout << "" << std::endl;
 
     for(int i = 0; i < num_total_disc; i++){
 
@@ -167,6 +205,10 @@ int main(){
         std::cout << "Semestre: " << disciplinas[i].get_semestre() << std::endl;
         std::cout << "Numero de Alunos: " << disciplinas[i].get_num_alunos() << std::endl;
     }
+
+    std::cout << "" << std::endl;
+    std::cout << "------------------------------------------------------------------" << std::endl;
+    std::cout << "" << std::endl;
 
     return 0;
 }
