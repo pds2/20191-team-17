@@ -1,6 +1,15 @@
 #ifndef PESSOA_H
 #define PESSOA_H
 
+/**
+*
+*@brief Class Pessoa
+*@file pessoa.hpp
+*@author Ricardo, Igor e Victor
+*@version 1.0
+*
+*/
+
 #include <iostream>
 #include <iomanip>
 

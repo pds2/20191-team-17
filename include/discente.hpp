@@ -1,6 +1,16 @@
 #ifndef DISCENTE_H
 #define DISCENTE_H
 
+/**
+*
+*@brief Class Discente
+*@file discente.hpp
+*@author Ricardo, Igor e Victor
+*@version 1.0
+*
+*/
+
+
 #include <iostream>
 #include <iomanip>
 

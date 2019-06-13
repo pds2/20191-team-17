@@ -1,6 +1,15 @@
 #ifndef DISCIPLINA_H
 #define DISCIPLINA_H
 
+/**
+*
+*@brief Class Disciplina
+*@file disciplina.hpp
+*@author Ricardo, Igor e Victor
+*@version 1.0
+*
+*/
+
 #include <iostream>
 #include <iomanip>
 

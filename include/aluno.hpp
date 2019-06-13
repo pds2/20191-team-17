@@ -1,6 +1,15 @@
 #ifndef ALUNO_H
 #define ALUNO_H
 
+/**
+*
+*@brief Class Aluno
+*@file aluno.hpp
+*@author Ricardo, Igor e Victor
+*@version 1.0
+*
+*/
+
 #include <iostream>
 #include <iomanip>
 
