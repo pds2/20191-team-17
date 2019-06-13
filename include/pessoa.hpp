@@ -1,16 +1,25 @@
 #ifndef PESSOA_H
 #define PESSOA_H
 
+/**
+*
+*@brief Class Pessoa
+*@file pessoa.hpp
+*@author Ricardo, Igor e Victor
+*@version 1.0
+*
+*/
+
 #include <iostream>
 #include <iomanip>
 
 #include <string>
 
+
 class Pessoa{
     
     private: 
         std::string _nome;
-        int _idade;
         std::string _cpf;
         std::string _data_nasc;
         std::string _endereco;    
@@ -19,15 +28,19 @@ class Pessoa{
             _nome = nome;
             _cpf = cpf;
             _data_nasc = data_nasc;
-            _idade = 1;
             _endereco = endereco;
         }
         std::string get_nome(){
-            return _nome;    
+            return _nome;
         };
-        int get_idade(){
-            return _idade;
+        std::string get_cpf(){
+            return _cpf;
         };
-        // TODO resto;
+        std::string get_data_nasc(){
+            return _data_nasc;
+        };
+        std::string get_endereco(){
+            return _endereco;
+        };
 };
 #endif
