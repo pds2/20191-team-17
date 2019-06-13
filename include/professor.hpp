@@ -1,6 +1,15 @@
 #ifndef PROFESSOR_H
 #define PROFESSOR_H
 
+/**
+*
+*@brief Class Professor
+*@file professor.hpp
+*@author Ricardo, Igor e Victor
+*@version 1.0
+*
+*/
+
 #include <iostream>
 #include <iomanip>
 

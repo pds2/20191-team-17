@@ -1,6 +1,15 @@
 #ifndef DEPARTAMENTO_H
 #define DEPARTAMENTO_H
 
+/**
+*
+*@brief Class Departamento
+*@file departamento.hpp
+*@author Ricardo, Igor e Victor
+*@version 1.0
+*
+*/
+
 #include <iostream>
 #include <iomanip>
 
